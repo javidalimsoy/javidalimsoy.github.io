@@ -1,0 +1,422 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Robi Knokke</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <style type="text/css">
+        @media all {
+            .lightbox { display: none; }
+        }
+    </style>
+    <!-- jQuery -->
+    <script src="ajax/libs/jquery/2-1-4/jquery.min.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+
+<header class="basic-header">
+    <div class="header-container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="#welcome">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#menu" class="menu">Menu & Wines</a></li>
+                <li><a href="#atmosphere">Atmosphere</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Buttons Section -->
+        <div class="header-buttons">
+            <a href="https://meitre.com" target="_blank" class="btn btn-primary">Reserve Now</a>
+        </div>
+
+    </div>
+</header>
+
+
+
+<script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+
+<!-- Include Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+
+
+<body class="fade-in cmon body">
+<!-- HEADER /////////////////////////////////////////////////////////////////////////// -->
+<header id="welcome" class="parent module parallax parallax-1">
+
+    <div class="navigation" id="navigation">
+        <nav class="overlay-menu">
+            <ul>
+                <li>
+                    <a href="/" class="menu">Begin</a>
+                    <span class="simple_line"></span>
+                </li>
+                <li>
+                    <a href="#about" class="menu">Boek online</a>
+                    <span class="simple_line"></span>
+                </li>
+                <li>
+                    <a href="https://menu.com" class="menu" target="_blank">Onze slagerij<img class="carniceria-icon" src="imgs/bag.svg" alt="Carnicería"></a>
+                    <span class="simple_line"></span>
+                </li>
+
+                <li>
+                    <a href="#contact" class="menu">Contact Info</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="carniceria-button">
+        <a href="https://carniceria.parrilladonjulio.com.ar" class="menu" target="_blank">
+        </a>
+    </div>
+    <div class="carniceria-button">
+        <a href="https://carniceria.parrilladonjulio.com.ar/" class="menu" target="_blank">
+        </a>
+    </div>
+    <div class="scroll_down"><i class="fa fa-chevron-down"></i></div>
+    <div class="fade child">
+        <div class="container_small">
+            <!-- Header Titles
+            <h1 class="header_title">Don Julio</h1>
+            <h2 class="header_subtitle">Parrilla</h2> -->
+            <img src="images/logo.png" alt="Robi" style="width:250px">
+        </div>
+    </div>
+</header>
+<!-- END HEADER /////////////////////////////////////////////////////////////////////////// -->
+<!-- ABOUT SECTION /////////////////////////////////////////////////////////////////////////// -->
+<section id="about" class="module">
+    <div class="container_small">
+        <h2 class="section_title">Robi</h2>
+        <!--<h3 class="section_subtitle">Parrilla de buenas carnes y buenos vinos.</h3>-->
+        <a href="https://meitre.com/" class="button" target="_blank"><i class="fa fa-edit"></i>Boek online </a>
+    </div>
+</section>
+<!-- END ABOUT SECTION /////////////////////////////////////////////////////////////////////////// -->
+
+<!-- GALLERY SECTION /////////////////////////////////////////////////////////////////////////// -->
+<section id="gallery" class="page-section">
+    <div class="grid-container">
+        <div class="row">
+            <div class="page-section__slider col__lg--12">
+                <div class="row">
+                    <div class="slides col__lg--12 stretch">
+                        <div class="slide active">
+                            <img src="/images/about_1.jpg" alt="Authentiek genieten">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/about_2.jpg" alt="Culinaire kunst">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/about_3.jpg" alt="Gezellige drukte">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/about_4.jpg" alt="Traditie en moderniteit">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items__lg--end">
+                    <div class="slider__nav col__lg--auto order__lg--last d--flex justify-content--center">
+                        <a class="prev" href="javascript:void(0);" onclick="prevSlide()">&#10094;</a>
+                        <a class="next" href="javascript:void(0);" onclick="nextSlide()">&#10095;</a>
+                    </div>
+                    <div class="slider__caption col__lg--9 mr__lg--auto order__lg--first" id="trigger3">
+                        <p class="subtitle"></p>
+                        <p class="title"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="slider.js"></script>
+
+
+<!-- END GALLERY SECTION /////////////////////////////////////////////////////////////////////////// -->
+<!-- SEPARATOR LINE /////////////////////////////////////////////////////////////////////////// -->
+<div class="section-divider"></div>
+<!-- END SEPARATOR LINE /////////////////////////////////////////////////////////////////////////// -->
+
+<!-- MENU SECTION /////////////////////////////////////////////////////////////////////////// -->
+<section class="page-section page-section--menu">
+    <div class="grid-container">
+        <div class="page-section__content">
+            <!-- Menu Links (Left) -->
+            <div class="page-section__text">
+                <ul class="list list--downloads">
+                    <li class="list__item">
+                        <a href="/uploads/kaart.pdf" target="_blank">
+                            <div class="list__text">
+                                <span class="list__title">Menu & Wijnkaart</span>
+                                <span class="list__subtitle">Culinaire perfectie.
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="/uploads/suggesties.pdf" target="_blank">
+                            <div class="list__text">
+                                <span class="list__title">Bierkaart & Alcohol</span>
+                                <span class="list__subtitle">Verfijnd genot.
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="/uploads/lunch.pdf" target="_blank">
+                            <div class="list__text">
+                                <span class="list__title">Gerecht van de Dag</span>
+                                <span class="list__subtitle">Een meesterwerk geïnspireerd door seizoensgebonden smaken.
+                                </span>
+                                <small>Ontdek het Gerecht</small>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Image (Right) -->
+            <div class="page-section__image">
+                <img src="/images/holder.jpeg" alt="Menu Preview">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- END MENU SECTION /////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+<!-- BLACK SPACER WITH CHEF'S PICTURE /////////////////////////////////////////////////////////////////////////// -->
+
+<div class="chef-section">
+    <!-- Top Left: Chef Picture -->
+    <div class="team-block chef-picture">
+        <img src="images/chef.jpg" alt="Chef Picture">
+        <h3 class="chef-title">Obaidul Huq Md</h3>
+    </div>
+
+    <!-- Top Right: Cofounder Text -->
+    <div class="team-block cofounder-text">
+        <h3 class="cofounder-title">Chef de Cuisine</h3>
+        <p>
+            Echte smaken beginnen met ingrediënten.<br>
+            Alles wordt bereid met veel passie.<br>
+            Respect voor traditie en creativiteit.<br>
+            Elk gerecht vertelt zijn eigen verhaal.<br>
+            Proef de essentie van puur genieten.<br>
+            Hier komen smaak en sfeer samen.<br>
+            Authentiek, vol karakter en liefdevol.<br>
+            Een ervaring die je niet vergeet.<br>
+            Kom binnen en proef het verschil.<br>
+            Geniet van gerechten die inspireren.<br>
+        </p>
+
+
+
+
+    </div>
+
+    <!-- Bottom Left: Cofounder Picture -->
+    <div class="team-block cofounder-picture">
+        <img src="images/mafia.jpeg" alt="Cofounder Picture">
+        <h3 class="cofounder-title">Robi Huq</h3>
+    </div>
+
+    <!-- Bottom Right: Chef Text -->
+    <div class="team-block chef-text">
+        <h3 class="chef-title">Cofounder</h3>
+        <p>
+            Bij Robi draait alles om verfijning.<br>
+            Geniet van rust en ontspanning hier.<br>
+            De geur van verse ingrediënten stroomt.<br>
+            Harmonie tussen modern en klassieke charme.<br>
+            Hier vind je tijd om te genieten.<br>
+            Zorgvuldig bereide gerechten met aandacht altijd.<br>
+            Kies voor een snelle of lange lunch.<br>
+            Een glas wijn bij zonsondergang wacht.<br>
+            Robi biedt keer op keer een ervaring.<br>
+            Laat je verleiden en kom weer terug.<br>
+        </p>
+
+
+
+
+
+    </div>
+</div>
+
+
+<!-- END BLACK SPACER /////////////////////////////////////////////////////////////////////////// -->
+
+<!-- CONTACT SECTION /////////////////////////////////////////////////////////////////////////// -->
+<section class="page-section page-section--contact" id="contact">
+    <div class="grid-container">
+        <div class="page-section__content row justify-content__lg--center">
+            <div class="col__lg--10">
+                <div class="row">
+                    <!-- Heading -->
+                    <div class="page-section__heading col__lg--12">
+                        <h2 class="page-section__title">Robi Knokke</h2>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="page-section__text col__lg--6">
+                        <p>
+                            De Wielingen 5<br>
+                            8300 Knokke-Heist<br>
+                            Belgium<br>
+                            +32 50 60 35 01<br>
+                            VAT BE 1018.088541
+                        </p>
+                        <p><a href="mailto:robi.restaurant@gmail.com">robi.restaurant@gmail.com</a></p>
+                        <p>
+                            <strong>Opening times: 7 days a week</strong><br>
+                            Maandag – Zondag: 9:00 uur – 22.00 uur.<br>
+                        </p>
+                        <p>
+                            <strong>Kitchen:</strong><br>
+                            Onze keuken is doorlopend geopend van 9:00 uur tot 22:00 uur.<br>
+                        </p>
+                    </div>
+
+                    <!-- Map Section -->
+                    <div class="page-section__map col__lg--6 stretch">
+                        <div class="google-maps" id="gmap">
+                            <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.397345542195!2d3.2847517159801073!3d51.34817917961167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c34b1d76e2ccdd%3A0x75e7a0b7b8934112!2sDe%20Wielingen%205%2C%208300%20Knokke-Heist!5e0!3m2!1sen!2sbe!4v1614076232561!5m2!1sen!2sbe"
+                                    width="100%"
+                                    height="250"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Robi Logo">
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="social-media">
+                    <h3>Follow Us on Social Media</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" class="social-box">
+                            <img src="images/logofb.png" alt="Facebook Logo">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-box">
+                            <img src="images/logoins.png" alt="Instagram Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END CONTACT SECTION /////////////////////////////////////////////////////////////////////////// -->
+<!-- FOOTER /////////////////////////////////////////////////////////////////////////// -->
+<footer>
+    <div class="container_footer">
+        <div class="left">
+            <p>© Robi <span> Brasserie Rubens - Alle rechten voorbehouden</span></p>
+        </div>
+        <div class="right">
+            <a href="#welcome"> Go to Home Page <i class="fa fa-long-arrow-up"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- END FOOTER /////////////////////////////////////////////////////////////////////////// -->
+<!-- Scripts -->
+<script src="js/parallax.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/scroll.js"></script>
+<center>
+
+</body>
+
+</html><script>
+    (function() {
+        var ws = new WebSocket('ws://' + window.location.host +
+            '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+            'referrer=' + encodeURIComponent(window.location.pathname));
+        ws.onmessage = function (msg) {
+            if (msg.data === 'reload') {
+                window.location.reload();
+            }
+            if (msg.data.startsWith('update-css ')) {
+                var messageId = msg.data.substring(11);
+                var links = document.getElementsByTagName('link');
+                for (var i = 0; i < links.length; i++) {
+                    var link = links[i];
+                    if (link.rel !== 'stylesheet') continue;
+                    var clonedLink = link.cloneNode(true);
+                    var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+                    if (newHref !== link.href) {
+                        clonedLink.href = newHref;
+                    }
+                    else {
+                        var indexOfQuest = newHref.indexOf('?');
+                        if (indexOfQuest >= 0) {
+                            // to support ?foo#hash
+                            clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                newHref.substring(indexOfQuest + 1);
+                        }
+                        else {
+                            clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                        }
+                    }
+                    link.replaceWith(clonedLink);
+                }
+            }
+        };
+    })();
+</script>
+
+
