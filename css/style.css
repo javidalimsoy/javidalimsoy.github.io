@@ -956,7 +956,7 @@ body {
 /* ===== JOBS SECTION ===== */
 .jobs-section {
     padding: 100px 40px;
-    background: #efefef;
+    background: #f8f8f8;
     text-align: left;
 }
 
@@ -1048,6 +1048,31 @@ body {
     .jobs-grid {
         gap: 24px 30px;
     }
+}
+
+
+.apply-btn {
+    margin-left: 10px;
+    background: var(--color-caramel);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+.apply-btn:hover {
+    background: #a76c40;
+}
+.job-application input,
+.job-application textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: var(--font-body);
 }
 
 

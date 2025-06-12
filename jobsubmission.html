@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work With Us – Robi</title>
+
+    <!-- Global site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Page‑specific CSS -->
+    <style>
+        body { padding-top: 140px; }
+        .job-body-wrapper {
+            padding: 60px 20px;
+            background: #fffaf7;
+            text-align: center;
+        }
+        .job-body-wrapper h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #8f5b2c;
+            margin-bottom: 20px;
+        }
+        .job-body-wrapper p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font: 1.1rem 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.8;
+        }
+        .job-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+        .job-btn {
+            background-color: #8f5b2c;
+            color: white;
+            padding: 12px 30px;
+            font: 500 1rem 'Inter', sans-serif;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .job-btn:hover {
+            background-color: #74451f;
+        }
+        .job-body-wrapper img {
+            max-width: 90%;
+            max-height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .job-detail-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            color: #8f5b2c;
+            margin: 60px 0 20px;
+        }
+        .job-body-wrapper ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 700px;
+            text-align: left;
+            font: 1rem 'Inter', sans-serif;
+            color: #444;
+            line-height: 1.7;
+        }
+        .job-body-wrapper ul li::before {
+            content: '➤';
+            color: #8f5b2c;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="logo">
+        <a href="index.html"><img src="img/favicon.png" alt="Robi Logo" /></a>
+    </div>
+    <div class="nav-wrapper">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#jobs">Jobs</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-phone desktop-phone">
+        <a href="tel:+32471871226" class="btn-reserve-header">Reservation</a>
+    </div>
+    <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+    </div>
+</header>
+
+<!-- FULLSCREEN NAV -->
+<div class="fullscreen-nav" id="fullscreen-nav">
+    <div class="close-btn" id="close-nav">✖</div>
+    <div class="mobile-header-info">
+        <a href="tel:+32471871226"><img src="img/phone-icon.png" alt="Phone" style="height:20px" /></a>
+    </div>
+    <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#jobs">Jobs</a></li>
+    </ul>
+</div>
+
+<!-- JOB CONTENT -->
+<section class="job-body-wrapper">
+    <h2>Work With Us</h2>
+    <p>At Robi, we're always looking for passionate individuals who love hospitality. Whether you're an experienced chef or a motivated student looking to gain experience, we have a spot for you.</p>
+
+    <div class="job-actions">
+        <a href="mailto:robi.restaurant@gmail.com?subject=Job%20Application%20&body=Hello,%0D%0AI'm%20interested%20in%20applying%20for%20a%20position%20at%20Robi.%20Please%20find%20my%20CV%20attached.%0D%0A%0D%0ARegards," class="job-btn">Contact us</a>
+        <img src="img/holder.jpeg" alt="Work at Robi" />
+    </div>
+
+    <h3 class="job-detail-title">What We’re Looking For</h3>
+    <ul>
+        <li>You enjoy working in a warm, service-minded environment</li>
+        <li>You’re motivated, clean & efficient</li>
+        <li>You can work independently and in teams</li>
+        <li>You speak English, Dutch or French</li>
+        <li>Experience in kitchen or service (or willingness to learn!)</li>
+    </ul>
+
+    <h3 class="job-detail-title">Your Potential Roles</h3>
+    <ul>
+        <li>Kitchen Help / Assistant Cook</li>
+        <li>Dishwasher / Prep Support</li>
+        <li>Waiter / Assistant Waiter</li>
+        <li>Weekend & Holiday Student Staff</li>
+    </ul>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="contact">
+    <div class="footer-wrapper">
+        <div class="footer-info">
+            <h3>Robi Restaurant</h3>
+            <p>De Wielingen 5<br>8300 Knokke-Heist<br>Belgium</p>
+            <p>Tel: 050 22 26 35<br>GSM: +32 471 87 12 26<br>VAT: BE 1018.088541</p>
+            <p>
+                <a href="mailto:robi.restaurant@gmail.com">robi.restaurant@gmail.com</a>
+            </p>
+            <h4>Opening Times</h4>
+            <p>
+                Monday: CLOSED<br>
+                Tuesday – Thursday: 11:00 – 22:00<br>
+                <em>Breakfast available Friday to Sunday</em><br>
+                Friday – Sunday: 09:00 – 22:00
+            </p>
+        </div>
+
+        <div class="footer-map">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.397345542195!2d3.2847517159801073!3d51.34817917961167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c34b1d76e2ccdd%3A0x75e7a0b7b8934112!2sDe%20Wielingen%205%2C%208300%20Knokke-Heist!5e0!3m2!1sen!2sbe!4v1614076232561!5m2!1sen!2sbe"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</footer>
+
+<!-- ====== FOOTER BRANDING ====== -->
+<section class="footer-branding">
+    <div class="branding-wrapper">
+        <img src="img/favicon.png" alt="Robi Logo" class="footer-logo" />
+        <p class="follow-text">Follow us on social media</p>
+        <div class="underline"></div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61571955569482" target="_blank">
+                <img src="img/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/restaurant_robi/" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" />
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- NAV SCRIPT -->
+<script>
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("fullscreen-nav");
+    const closeBtn = document.getElementById("close-nav");
+    burger.addEventListener("click", () => {
+        nav.classList.add("active");
+        burger.classList.add("active");
+    });
+    closeBtn.addEventListener("click", () => {
+        nav.classList.remove("active");
+        burger.classList.remove("active");
+    });
+    document.querySelectorAll('.fullscreen-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove("active");
+            burger.classList.remove("active");
+        });
+    });
+</script>
+</body>
+</html>
