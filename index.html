@@ -3,267 +3,123 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robi Restaurant – Antwerp</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Chef Vacancy – Robi Restaurant</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            color: #222;
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css" />
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .underline {
+            width: 40px;
+            height: 2px;
+            background-color: #8f5b2c;
+            margin: 10px 0 30px;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .job-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .job-img {
+            flex: 1 1 300px;
+        }
+
+        .job-img img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .job-info {
+            flex: 1 1 500px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: #111;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #333;
+        }
+
+        .mail-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 28px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .mail-btn:hover {
+            background-color: #8f5b2c;
+        }
+
+        @media (max-width: 768px) {
+            .job-flex {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <h1>Chef vacancy (cold and/or hot section)</h1>
+    <div class="underline"></div>
 
-<!-- ====== HEADER ====== -->
-<header class="site-header">
-    <div class="logo">
-        <img src="img/favicon.png" alt="Robi Logo" />
-    </div>
+    <p>Do you love fresh, classic dishes from Belgian cuisine? Do you have experience working in a brasserie kitchen? Are you able to cope with stress, are you flexible and do you enjoy working in an enthusiastic team? If so, apply now and start working as a chef at Robi Restaurant!</p>
 
-    <div class="nav-wrapper">
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#jobs">Jobs</a></li>
+    <div class="job-flex">
+        <div class="job-img">
+            <img src="img/chief.jpg" alt="Chef at Robi">
+        </div>
+        <div class="job-info">
+            <h2>What we expect from you</h2>
+            <p>As an experienced chef, you are familiar with the HACCP standards and you work hygienically, tidily and punctually. You enjoy cooking in a team, but you have no problem working independently either. You have a positive nature and you can speak Dutch, French or English.</p>
+            <p>Your duties:</p>
+            <ul>
+                <li>Mise en place</li>
+                <li>Preparing, arranging and garnishing dishes</li>
+                <li>Maintaining the kitchen and equipment</li>
             </ul>
-        </nav>
+            <p>Are you an expert in hot food? Or passionate about cold food? Combine the two — we’re pleased to adapt the job to your preference.</p>
+
+            <a class="mail-btn" href="mailto:robi.restaurant@gmail.com?subject=Chef%20Vacancy%20Application&body=Dear%20Robi%20Team,%0D%0A%0D%0AI%20would%20like%20to%20apply%20for%20the%20chef%20vacancy.%20Please%20find%20my%20details%20and%20CV%20attached.%0D%0A%0D%0AKind%20regards,">MAIL US</a>
+        </div>
     </div>
-
-    <div class="header-phone desktop-phone">
-        <a href="tel:+32471871226" class="btn-reserve-header">Reservation</a>
-    </div>
-
-
-
-    <div class="burger" id="burger">
-        <span></span><span></span><span></span>
-    </div>
-</header>
-
-<!-- ====== FULLSCREEN NAV ====== -->
-<div class="fullscreen-nav" id="fullscreen-nav">
-    <div class="close-btn" id="close-nav">✖</div>
-    <div class="mobile-header-info">
-        <a href="tel:+32471871226">
-            <img src="img/phone-icon.png" alt="Phone" style="height: 20px;" />
-        </a>
-    </div>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#jobs">Jobs</a></li>
-    </ul>
 </div>
-
-<!-- ====== HERO SECTION ====== -->
-<section class="hero" id="home">
-    <div class="hero-slider">
-        <div class="slide" style="background-image: url('img/hero1.jpeg');"></div>
-        <div class="slide" style="background-image: url('img/hero2.jpeg');"></div>
-        <div class="slide" style="background-image: url('img/hero3.jpeg');"></div>
-    </div>
-
-    <div class="hero-content">
-        <h1>Welcome to Robi</h1>
-        <p>Experience fine dining by the sea in the heart of Knokke.</p>
-
-        <a href="#menu" class="btn-cta">See Our Menu</a>
-
-        <div class="reserve-buttons">
-            <a href="tel:+32471871226" class="btn-cta reserve-btn">Call to Reserve</a>
-            <a href="mailto:robi.restaurant@gmail.com?subject=Table%20Reservation" class="btn-cta reserve-btn">Email to Reserve</a>
-        </div>
-    </div>
-
-    <div class="scroll-indicator">
-        SCROLL
-        <div class="line"></div>
-    </div>
-</section>
-
-<!-- ====== ABOUT ROBI SECTION ====== -->
-<section class="about" id="about">
-    <div class="container">
-        <p class="about-text">
-            A hidden gem where comfort meets craft. At Robi, every plate tells a story — simple, seasonal, and sincerely made.
-        </p>
-    </div>
-</section>
-
-<!-- ====== ATMOSPHERE SECTION ====== -->
-<section class="atmosphere" id="gallery">
-    <div class="atmosphere-grid">
-        <div class="atmosphere-image">
-            <img src="img/hero2.jpeg" alt="Robi Interior" />
-        </div>
-        <div class="atmosphere-text">
-            <h2>Atmosphere at Robi</h2>
-            <p>Warm lighting. Soft jazz. Intimate, elegant corners.</p>
-            <p>Perfect for long dinners and quiet conversations.</p>
-            <a href="#contact" class="btn-cta small">Reserve Now</a>
-        </div>
-    </div>
-</section>
-
-<!-- ====== SIGNATURE DISHES SECTION ====== -->
-<section class="signature-dishes" id="menu">
-    <div class="container">
-        <h2 class="section-title signature-title">Signature Dishes</h2>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <img src="img/beefwell.jpeg" alt="Dish 1" />
-                <h3>Beef Wellington</h3>
-                <p>Tender beef fillet wrapped in duxelles and buttery puff pastry, baked to golden perfection. A timeless classic with a crisp, savory finish.</p>
-            </div>
-            <div class="dish-card">
-                <img src="img/goldensteak.jpeg" alt="Dish 2" />
-                <h3>24K Golden Steak Night</h3>
-                <p>A luxurious dining experience featuring premium steak coated in edible 24K gold. Juicy, tender, and indulgent — a true showstopper for special nights.</p>
-            </div>
-            <div class="dish-card">
-                <img src="img/meditarianseabass.jpeg" alt="Dish 3" />
-                <h3>Mediterranean Sea Bass</h3>
-                <p>Delicately grilled and infused with herbs, served with a drizzle of olive oil and lemon — light, fresh, and full of coastal flavor.</p>
-            </div>
-        </div>
-        <a href="uploads/robi's-menu.pdf" target="_blank" class="btn-cta small center">See Full Menu</a>
-    </div>
-</section>
-
-<!-- ====== MENU SECTION ====== -->
-<section class="menu-access" id="fullmenu">
-    <div class="menu-wrapper">
-        <div class="menu-info">
-            <h2 class="menu-header">Explore the Menu</h2>
-            <div class="menu-link">
-                <a href="uploads/menug.pdf" target="_blank">Food & Wine Selection</a>
-                <span>Handpicked seasonal dishes, updated regularly.</span>
-            </div>
-            <div class="menu-link">
-                <a href="uploads/alcohollist.pdf" target="_blank">Drinks & Cocktails</a>
-                <span>Crafted beverages and curated cellar picks.</span>
-            </div>
-        </div>
-        <div class="menu-image">
-            <img src="img/explore.jpeg" alt="Robi Table" />
-        </div>
-    </div>
-</section>
-
-<!-- ====== MEET THE TEAM SECTION ====== -->
-<section class="meet-team">
-    <div class="team-wrapper">
-        <div class="team-member">
-            <img src="img/chief.jpg" alt="Chef at Robi" />
-            <h3>Obaidul Huq Md</h3>
-            <p class="role">Executive Chef</p>
-            <p class="bio">Where precision meets passion — every plate is intentional.</p>
-        </div>
-        <div class="team-member">
-            <img src="img/founder.jpeg" alt="Founder of Robi" />
-            <h3>Robi HUQ</h3>
-            <p class="role">Founder & Heart of Robi</p>
-            <p class="bio">Elegance in taste, warmth in welcome — the essence of Robi.</p>
-        </div>
-    </div>
-    <div class="team-link">
-        <a href="about.html"><em>Learn more about them</em></a>
-    </div>
-</section>
-
-<!-- ====== JOBS SECTION ====== -->
-<section class="jobs-section" id="jobs">
-    <div class="jobs-wrapper">
-        <h2 class="jobs-title">Jobs</h2>
-        <p class="jobs-intro">
-            Join a place where care is in every plate and every smile.
-            We're always looking for people who bring warmth to the room — and maybe enjoy a sea breeze with it.
-        </p>
-
-        <div class="jobs-grid">
-            <div class="job-item"><span class="arrow-icon">👨‍🍳</span> Assistant Cook / Kitchen Help</div>
-            <div class="job-item"><span class="arrow-icon">🧼</span> Dishwasher</div>
-            <div class="job-item"><span class="arrow-icon">🤵🏻</span> Assistant Waiter / Waiter</div>
-            <div class="job-item"><span class="arrow-icon">👨‍🎓</span> Students (Kitchen / Dining)</div>
-        </div>
-    </div>
-</section>
-
-<!-- ====== FOOTER ====== -->
-<footer class="site-footer" id="contact">
-    <div class="footer-wrapper">
-        <div class="footer-info">
-            <h3>Robi Restaurant</h3>
-            <p>De Wielingen 5<br>8300 Knokke-Heist<br>Belgium</p>
-            <p>Tel: 050 22 26 35<br>GSM: +32 471 87 12 26<br>VAT: BE 1018.088541</p>
-            <p>
-                <a href="mailto:robi.restaurant@gmail.com">robi.restaurant@gmail.com</a>
-            </p>
-            <h4>Opening Times</h4>
-            <p>
-                Monday: CLOSED<br>
-                Tuesday – Thursday: 11:00 – 22:00<br>
-                <em>Breakfast available Friday to Sunday</em><br>
-                Friday – Sunday: 09:00 – 22:00
-            </p>
-        </div>
-
-        <div class="footer-map">
-            <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.397345542195!2d3.2847517159801073!3d51.34817917961167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c34b1d76e2ccdd%3A0x75e7a0b7b8934112!2sDe%20Wielingen%205%2C%208300%20Knokke-Heist!5e0!3m2!1sen!2sbe!4v1614076232561!5m2!1sen!2sbe"
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
-    </div>
-</footer>
-
-<!-- ====== FOOTER BRANDING ====== -->
-<section class="footer-branding">
-    <div class="branding-wrapper">
-        <img src="img/favicon.png" alt="Robi Logo" class="footer-logo" />
-        <p class="follow-text">Follow us on social media</p>
-        <div class="underline"></div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61571955569482" target="_blank">
-                <img src="img/facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/restaurant_robi/" target="_blank">
-                <img src="img/instagram.png" alt="Instagram" />
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- ====== SCRIPTS ====== -->
-<script>
-    const burger = document.getElementById("burger");
-    const nav = document.getElementById("fullscreen-nav");
-    const closeBtn = document.getElementById("close-nav");
-
-    burger.addEventListener("click", () => {
-        nav.classList.add("active");
-        burger.classList.add("active");
-    });
-
-    closeBtn.addEventListener("click", () => {
-        nav.classList.remove("active");
-        burger.classList.remove("active");
-    });
-
-    document.querySelectorAll('.fullscreen-nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove("active");
-            burger.classList.remove("active");
-        });
-    });
-</script>
-
 </body>
 </html>
